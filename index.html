@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prueba</title>
+</head>
+<body>
+    <table id="tabla">
+        <thead>
+    <tr>
+        <th>Nombre</th>
+        <th>Edad</th>
+      
+      </tr>
+    </thead>
+      <tbody>
+        
+  
+
+      <tbody>
+    </table>
+    <br>
+   <center> <input type="text" id="myInput"  placeholder="Buscar nombres">
+</center>
+
+<center> 
+    <button id="#btn-buscar" onclick="GetAlumnosByName()">Buscar</button>
+</center>
+</body>
+
+
+
+<style>
+    poner fondo dark y letras blancas
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 5px;
+      text-align: left;
+    }
+    
+   
+    input[type=text] {
+      width: 100%;
+      box-sizing: border-box;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+      background-color: white;
+      background-image: url('searchicon.png');
+      background-position: 10px 10px;
+      background-repeat: no-repeat;
+      padding: 12px 20px 12px 40px;
+      -webkit-transition: width 0.4s ease-in-out;
+      transition: width 0.4s ease-in-out;
+    }
+    
+    input[type=text]:focus {
+      width: 100%;
+    }
+    #myInput {
+      background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+      background-position: 10px 12px; /* Position the search icon */
+      background-repeat: no-repeat; /* Do not repeat the icon image */
+      width: 20%; /* Full-width */
+      font-size: 16px; /* Increase font-size */
+      padding: 12px 20px 12px 40px; /* Add some padding */
+      border: 1px solid #ddd; /* Add a grey border */
+      margin-bottom: 12px; /* Add some space below the input */
+    }
+   
+    #myTable {
+      border-collapse: collapse; /* Collapse borders */
+      width: 50%; /* Full-width */
+      border: 1px solid #ddd; /* Add a grey border */
+      font-size: 18px; /* Increase font-size */
+    }
+
+    table{
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    td{
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    th{
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+  
+    table{
+        background-color: #f1f1c1;
+    }
+    
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+   
+    table{
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+   
+    table{
+        width: 50%;
+    }
+     
+    table{
+        margin: 0 auto;
+    }
+   
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="script.js"></script>
+</html>
+
+
