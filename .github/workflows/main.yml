@@ -36,7 +36,7 @@ jobs:
    
       uses: docker/build-push-action@v3
       with:
-        context: DockerFile
+        context: ./DockerFile
         push: true
        
         tags: juanrojas09/integrador-net-front:latest
