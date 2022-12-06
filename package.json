@@ -4,7 +4,9 @@
   "description": "��#\u0000 \u0000I\u0000s\u0000w\u0000-\u0000I\u0000n\u0000t\u0000e\u0000g\u0000r\u0000a\u0000d\u0000o\u0000r\u0000-\u0000F\u0000r\u0000o\u0000n\u0000t\u0000\r\u0000 \u0000",
   "main": "script.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "serve ."
+
   },
   "repository": {
     "type": "git",
@@ -16,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/juanrojas09/Isw-Integrador-Front/issues"
   },
-  "homepage": "https://github.com/juanrojas09/Isw-Integrador-Front#readme"
+  "homepage": "https://github.com/juanrojas09/Isw-Integrador-Front#readme",
+  "dependencies": {
+    "serve": "^14.1.2"
+  }
 }
