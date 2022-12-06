@@ -1,6 +1,7 @@
 //llamo a las tablas con jquery
 //web-dev-server --open --watch
 $(document).ready(function () {
+    
     //funcion que se accione al dar click en el boton
     $("#btn-buscar").click(function () {
         //llamo a la funcion que me trae los datos
@@ -8,15 +9,16 @@ $(document).ready(function () {
     }
     );
 
-    
-
-    
+    $("#btn-buscar2").click(function () {
+        GetAll();
+    });
 
         $(document).ready(function () {
             //funcion que se accione al dar click en el boton
             $("#btn-buscar").click(function () {
                 //llamo a la funcion que me trae los datos
-                GetAlumnosByName();
+                //GetAlumnosByName();
+                
             }
             );
         }
@@ -26,8 +28,36 @@ $(document).ready(function () {
 
    
 
+console.log("hola");
+
+async function GetAll(){
+
+    (async () => {
+        const rawResponse = await fetch('https://isw3-integrador-production.up.railway.app/All'  , {
+            method: 'GET',
+            
+            
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
 
 
+            }
+
+
+
+        });
+        const resp = await rawResponse.json();
+
+        let tabla='';
+        for(let i=0;i<resp.length;i++){
+            let html='<tr><td>'+resp[i].name+'</td><td>'+resp[i].age+'</td></tr>';
+            tabla=tabla+html;
+        }
+        document.querySelector("#tabla tbody").outerHTML =  tabla;
+    })();
+
+}
 
 
 
@@ -38,7 +68,7 @@ $(document).ready(function () {
 async function GetAlumnosByName() {
 
     const nombre = document.getElementById("myInput").value;
-
+  
     console.log("hola"+nombre);
 
 
