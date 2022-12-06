@@ -33,10 +33,10 @@ jobs:
        
     - name: build and push
       id: build-and-push
-     # uses: docker/build-push-action@ac9327eae2b366085ac7f6a2d02df8aa8ead720a
+   
       uses: docker/build-push-action@v3
       with:
-       # context: .
+        context: DockerFile
         push: true
        
         tags: juanrojas09/integrador-net-front:latest
