@@ -1,5 +1,5 @@
 #docker file para el contenedor del front
-FROM node:12.16.1-alpine
+FROM node:16.17.0-alpine
 WORKDIR /app
 COPY package*.json ./
 RUN npm install
