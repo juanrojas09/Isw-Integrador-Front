@@ -51,6 +51,12 @@ jobs:
 
     - name: Image digest
       run: echo ${{ steps.docker_build.outputs.digest}}
+      
+    - name: Run Integraion Tests
+      run: |
+       cd TestIntegracion
+       npx create-codeceptjs .
+       npx codeceptjs run --steps
   
 
       #- name: Run tests
