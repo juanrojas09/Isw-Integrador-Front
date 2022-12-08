@@ -53,7 +53,9 @@ jobs:
       run: echo ${{ steps.docker_build.outputs.digest}}
       
     - name: Run Integraion Tests
-      run: npx codeceptjs run --steps
+      run: |
+       npx create-codeceptjs .
+       npx codeceptjs run --steps
   
 
       #- name: Run tests
