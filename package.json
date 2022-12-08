@@ -1,25 +1,38 @@
 {
-  "name": "integrador-front",
-  "version": "1.0.0",
-  "description": "��#\u0000 \u0000I\u0000s\u0000w\u0000-\u0000I\u0000n\u0000t\u0000e\u0000g\u0000r\u0000a\u0000d\u0000o\u0000r\u0000-\u0000F\u0000r\u0000o\u0000n\u0000t\u0000\r\u0000 \u0000",
-  "main": "script.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "serve ."
-
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/juanrojas09/Isw-Integrador-Front.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/juanrojas09/Isw-Integrador-Front/issues"
-  },
-  "homepage": "https://github.com/juanrojas09/Isw-Integrador-Front#readme",
-  "dependencies": {
-    "serve": "^14.1.2"
-  }
+    "name": "integrador-front",
+    "version": "1.0.0",
+    "description": "��#\u0000 \u0000I\u0000s\u0000w\u0000-\u0000I\u0000n\u0000t\u0000e\u0000g\u0000r\u0000a\u0000d\u0000o\u0000r\u0000-\u0000F\u0000r\u0000o\u0000n\u0000t\u0000\r\u0000 \u0000",
+    "main": "script.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "serve .",
+        "codeceptjs": "codeceptjs run --steps",
+        "codeceptjs:headless": "HEADLESS=true codeceptjs run --steps",
+        "codeceptjs:ui": "codecept-ui --app",
+        "codeceptjs:demo": "codeceptjs run --steps -c node_modules/@codeceptjs/examples",
+        "codeceptjs:demo:headless": "HEADLESS=true codeceptjs run --steps -c node_modules/@codeceptjs/examples",
+        "codeceptjs:demo:ui": "codecept-ui --app  -c node_modules/@codeceptjs/examples"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/juanrojas09/Isw-Integrador-Front.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/juanrojas09/Isw-Integrador-Front/issues"
+    },
+    "homepage": "https://github.com/juanrojas09/Isw-Integrador-Front#readme",
+    "dependencies": {
+        "serve": "^14.1.2"
+    },
+    "devDependencies": {
+        "@codeceptjs/configure": "^0.10.0",
+        "@codeceptjs/examples": "^1.2.1",
+        "@codeceptjs/ui": "^0.4.7",
+        "codeceptjs": "^3.3.7",
+        "playwright": "^1.28.1",
+        "webdriverio": "^6.12.1"
+    }
 }

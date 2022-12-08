@@ -132,3 +132,79 @@ async function GetAlumnosByName() {
  
 
 
+/*
+
+const { setHeadlessWhen, setCommonPlugins } = require('@codeceptjs/configure');
+// turn on headless mode when running with HEADLESS=true environment variable
+// export HEADLESS=true && npx codeceptjs run
+setHeadlessWhen(process.env.HEADLESS);
+
+// enable all common plugins https://github.com/codeceptjs/configure#setcommonplugins
+setCommonPlugins();
+
+//@type {CodeceptJS.MainConfig} 
+exports.config = {
+    tests: './*_test.js',
+    output: './output',
+    helpers: {
+      WebDriver: {
+        url: 'https://isw3-integrador-production.up.railway.app/',
+        browser: 'chrome',
+        onRequest: () => {
+              }
+      }
+    },
+    include: {
+      I: './steps_file.js'
+    },
+    name: 'IT',
+    mocha:  {
+      "reporterOptions": {
+        "codeceptjs-cli-reporter": {
+          "stdout": "-",
+          "options": {
+            "steps": true,
+          }
+        },
+        "mocha-junit-reporter": {
+          "stdout": "./output/console.log",
+          "options": {
+            "mochaFile": "./output/result.xml"
+          },
+          "attachments": true //add screenshot for a failed test
+          }
+        }
+      }
+    
+  }
+
+*/
+
+/*
+
+Feature('netcore');
+
+const expect = require('chai').expect;
+const {I} = inject();
+
+Scenario('Verify a successful call', async () => {
+	const res = await I.sendGetRequest('/');
+	expect(res.status).to.eql(200);
+});
+
+Scenario('Verify return value', async () => {
+	const res = await I.sendGetRequest('/');
+	//console.log(res);
+	expect(res.data.message).to.eql('Ruta default del proyecto integrador de ISW3');
+});
+
+Scenario('Verify return data', async () => {
+	const res = await I.sendGetRequest('/juan');
+	//console.log(res);
+	expect(res.status).to.eql(200);
+});
+*/ 
+
+
+
+
