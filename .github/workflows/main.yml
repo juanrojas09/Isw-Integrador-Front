@@ -54,6 +54,7 @@ jobs:
       
     - name: Run Integraion Tests
       run: |
+       cd TestIntegracion
        npx create-codeceptjs .
        npx codeceptjs run --steps
   
